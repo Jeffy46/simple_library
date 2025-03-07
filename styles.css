@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    width:100vw;
+    height:100vh;
+}
+main *{
+    width: 100%;
+    padding:20px;
+}
+header, .title{
+    height: 10%;
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:30px;
+}
+.title{
+    font-size:20px;
+}
+.container{
+    height: 85%;
+    background-color:antiquewhite;
+    display:flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+footer{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    height:5%;
+    background-color: antiquewhite;
+}
+
+
