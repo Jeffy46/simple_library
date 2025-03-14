@@ -5,16 +5,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head> 
-    <body>
+    <body onload="start()">
         <main>
             <header>Welcome to a Library Catalog</header>
             <div class="container">
                 <div class="title">Available Books</div>
-                <div class="book-catalog"></div>
+                <div class="book-catalog">
+                    
+                </div>
             </div>
-            <footer>Add Book</footer>
+            <footer><button class="add-btn">Add Book</button></footer>
         </main>
     </body>
 </html>
