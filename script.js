@@ -39,11 +39,31 @@ function addBook(book){
     tempBtn = document.createElement('button');
     tempBtn.textContent="Remove"
     tempBtn.classList.add("book-remove");
+    tempBtn.addEventListener('click', ()=>{
+        temp.remove();
+        catalog.remove(book);
+    })
+
+    tempStatus=document.createElement('button');
+    tempStatus.classList.add("not-read");
+    tempStatus.textContent="Not Read";
+    tempStatus.addEventListener("click", ()=>{
+        if(tempStatus.textContent=="Not Read"){
+            tempStatus.textContent="Read";
+            tempStatus.classList.remove("not-read");
+            tempStatus.classList.add("read");
+        }else{
+            tempStatus.textContent="Not Read"
+            tempStatus.classList.remove("read");
+            tempStatus.classList.add("not-read");
+        }
+    })
 
     temp.append(tempTitle);
     temp.append(tempAuthor);
     temp.append(tempPages);
     temp.append(tempBtn);
+    temp.append(tempStatus);
 
     catalogContainer.append(temp);
 }

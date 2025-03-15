@@ -67,7 +67,21 @@ header, .title{
     background-color: lightcoral;
     width: 100%;
 }
-
+.read, .not-read{
+    padding: 0px;
+    margin-left:auto;
+    width:200px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px darkgrey;
+    width: 100%;
+}
+.not-read{
+    background-color:pink;
+}
+.read{
+    background-color:lightgreen;
+}
 footer{
     display:flex;
     justify-content: flex-end;
